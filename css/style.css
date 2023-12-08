@@ -1,0 +1,139 @@
+/*ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header{
+ padding: 40px 4%;
+}
+
+header, section, footer{ /*fundo da imagem*/
+    max-width: 1980px;
+    min-height: 100vh;
+    background-image: linear-gradient(-140deg,#763e76,#763e76,#944f94);
+}
+ 
+.interface {
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+
+}
+header a{ 
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+         color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.2s;
+        font-size: 20px;
+}
+a:hover{ /*transição de tamanho*/
+    color: #fff;
+    transform: scale(1.05);
+}
+header nav ul /*retirar traçado da escrita*/
+{
+ list-style-type:none;
+
+}
+
+header nav ul li{
+    display:inline-block;
+    padding: 0 30px;
+}
+.btn-contato button /*botão*/
+{   
+    white-space:unset;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 100;
+    background-color:rgb(85, 37, 85);
+    color: #f0e8e8;
+    border-radius: 30px;
+    cursor:pointer;    
+}
+
+.flex{
+    display: flex;
+
+}
+.interface h2{ /*titulo*/
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/*ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{ /*Descrição Em busca...*/
+    justify-content: last baseline 40px;
+    margin: 40px 0;
+    gap: 0;
+    color: #fff;
+    padding: 130px 7%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.topo-do-site .txt-topo-do-site p{ /*cor do texto do meio*/
+    color: #fff;
+    font-size: 25px;
+}
+.topo-do-site .flex img{ /*simbolo */
+    width: 480px;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+    padding: 40 10%;
+    
+position: relative;
+animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+    @keyframes flutuar {
+        0% {
+            top: 0;
+        }
+        100% {
+            top: 30px;
+        }
+    }
+
+/* ESTILO DAS ESPECIALIDADES*/
+
+section .colaboradoras{ /*colaboradoras*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 10%;
+    margin: 0px 0 0;
+    color: #fff;
+    
+}
+
+.colaboradoras .colaboradoras{
+  border: #fff solid 1px;
+ border-radius: 10px;
+ transform: scale(0.95);
+ box-shadow: 0 0 8px #fff;
+}
+
+section .interface{ 
+flex-wrap: wrap;
+color: #fff;
+font-size: 30px;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+justify-content: center;
+padding: 100px 10%;
+    
+}
+.form{
+    padding: 500px 0 0;
+    max-width: 500px;
+
+
+   }
